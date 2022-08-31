@@ -25,16 +25,17 @@
     </div>
 </div>
 <div class="ui segment">
-    <form class="ui equal width form" method="post" action="/data">
+    <form class="ui equal width form" method="post" action="/data" id="addForm">
         <h4 class="ui diving header">Add</h4>
         <div class="field">
             <label for="title">Title</label>
             <input type="text" name="title" id="title" placeholder="Title" />
         </div>
         <div class="required field">
-            <label for="content">Content</label>
-            <textarea placeholder="Content" id="content" name="content"></textarea>
+            <label for="input_content">Content</label>
+            <textarea placeholder="Content" id="input_content"></textarea>
         </div>
+        <label><textarea id="content" name="content" hidden="hidden"></textarea></label>
         <div class="field">
             <label for="lang">Lang</label>
             <select class="ui search dropdown" id="lang" name="lang">
@@ -48,7 +49,7 @@
                 <label for="agreement">I will follow the <a href="">rules</a>.</label>
             </div>
         </div>
-        <button class="ui button" id="submitButton" type="submit">Submit</button>
+        <a class="ui button" id="addFormSubmitButton">Submit</a>
     </form>
 </div>
 
